@@ -8,6 +8,7 @@ import { ViewType } from "./models/ViewType";
 import ToolsWrapper from "./components/ToolsWrapper";
 import Image from "next/image";
 import { sites } from "./constants/SiteDataConstants";
+import LeetCode50 from "./components/LeetCode50";
 
 export default function Home() {
 	const [currentView, setCurrentView] = useState<ViewType>("shortcuts");
@@ -39,14 +40,14 @@ export default function Home() {
 		setCurrentView(view);
 	}
 
-	function monitorMinScreenSize(){
-		const div = document.getElementById('content-div');
-    if (div) {
-      const height = div.offsetHeight;
-      if(height > minScreenHeight){
+	function monitorMinScreenSize() {
+		const div = document.getElementById("content-div");
+		if (div) {
+			const height = div.offsetHeight;
+			if (height > minScreenHeight) {
 				setMinScreenHeight(height);
 			}
-    }
+		}
 	}
 
 	useEffect(() => {
@@ -65,7 +66,7 @@ export default function Home() {
 		}
 	}, []);
 
-	useEffect(monitorMinScreenSize, [currentView])
+	useEffect(monitorMinScreenSize, [currentView]);
 
 	return (
 		<div className={`w-full flex flex-col items-center p-8 bg-cover bg-center ${isAnime ? backgroundImage : "bg-black"}`}>
@@ -91,7 +92,7 @@ export default function Home() {
 					</button>
 				</div>
 			</div>
-			<div id="content-div" className="flex max-w-screen-2xl min-h-svh flex-wrap justify-center" style={{height: minScreenHeight}}>
+			<div id="content-div" className="flex max-w-screen-2xl min-h-svh flex-wrap justify-center" style={{ height: minScreenHeight }}>
 				{currentView == "shortcuts" &&
 					sites.map((site) => {
 						return (
@@ -100,6 +101,10 @@ export default function Home() {
 							</div>
 						);
 					})}
+
+				<div className="m-4">
+					<LeetCode50/>
+				</div>
 
 				{currentView == "tools" && <ToolsWrapper />}
 			</div>
