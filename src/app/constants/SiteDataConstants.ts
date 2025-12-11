@@ -12,19 +12,14 @@ export const sites: SiteData[] = [
 		RedirectUrl: "https://chatgpt.com/",
 	},
 	{
-		ImageUrl: "/images/gitlab-logo-500.png",
-		Title: "Gitlab",
-		RedirectUrl: "https://gitlab.tooling.nexus1.ai/",
+		ImageUrl: "/images/github-mark-white.png",
+		Title: "GitHub",
+		RedirectUrl: "https://github.com",
 	},
 	{
-		ImageUrl: "/images/jira.png",
-		Title: "Jira",
-		RedirectUrl: "https://nexus1.atlassian.net/jira/software/projects/NUI/boards/2",
-	},
-	{
-		ImageUrl: "/images/grafana.png",
-		Title: "Grafana",
-		RedirectUrl: "https://observe.tooling.nexus1.ai/",
+		ImageUrl: "/images/json.png",
+		Title: "Json Formatter",
+		RedirectUrl: "https://jsonformatter.cursedshrine.co.in",
 	},
 	{
 		ImageUrl: "/images/youtube.png",
@@ -37,11 +32,6 @@ export const sites: SiteData[] = [
 		ImageUrl: "/images/youtube-music.png",
 		Title: "Youtube Music",
 		RedirectUrl: "https://music.youtube.com",
-	},
-	{
-		ImageUrl: "/images/github-mark-white.png",
-		Title: "GitHub",
-		RedirectUrl: "https://github.com",
 	},
 	{
 		ImageUrl: "/images/Amplify.png",
@@ -58,14 +48,4 @@ export const sites: SiteData[] = [
 		Title: "S3 Bucket",
 		RedirectUrl: "https://ap-south-1.console.aws.amazon.com/s3/home?region=ap-south-1#",
 	},
-	// {
-	//   ImageUrl: "/images/jenkins.png",
-	//   Title: "Jenkins",
-	//   RedirectUrl: "http://jenkins-dev.api.zentrumhub.com",
-	// },
-	// {
-	//   ImageUrl: "/images/elasticsearch.png",
-	//   Title: "Kibana Logs",
-	//   RedirectUrl: "https://nexus-logs.prod.zentrumhub.com/app/discover#/view/54b3dd20-d966-11ef-9bf7-b7188277e36a"
-	// },
 ];
