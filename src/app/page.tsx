@@ -8,7 +8,6 @@ import { ViewType } from "./models/ViewType";
 import ToolsWrapper from "./components/ToolsWrapper";
 import Image from "next/image";
 import { sites } from "./constants/SiteDataConstants";
-import LeetCode50 from "./components/LeetCode50";
 import LocalhostPortLauncher from "./components/LocalhostPortLauncher";
 
 export default function Home() {
@@ -94,11 +93,6 @@ export default function Home() {
 								</div>
 							);
 						})}
-
-					<div className="m-4">
-						<LeetCode50 />
-					</div>
-
 					{currentView == "tools" && <ToolsWrapper />}
 				</div>
 			</div>

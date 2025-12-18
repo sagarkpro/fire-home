@@ -58,4 +58,9 @@ export const sites: SiteData[] = [
 		Title: "S3 Bucket",
 		RedirectUrl: "https://ap-south-1.console.aws.amazon.com/s3/home?region=ap-south-1#",
 	},
+	{
+		ImageUrl: "/images/leetcode.png",
+		Title: "Leetcode 50",
+		RedirectUrl: "/leetcode50.md",
+	},
 ];
