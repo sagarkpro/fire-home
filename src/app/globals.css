@@ -21,6 +21,10 @@ body {
 
 /* primereact overrides */
 
+.p-dialog .p-dialog-header{
+  color: #ffffff;
+}
+
 .p-dialog > .p-dialog-header, .p-dialog-content{
   background-color: var(--background);
 }

@@ -2,19 +2,24 @@ import { SiteData } from "../models/SiteData";
 
 export const sites: SiteData[] = [
 	{
-		ImageUrl: "/images/primeVideo.png",
-		Title: "Prime Video",
-		RedirectUrl: "https://www.primevideo.com/",
-	},
-	{
 		ImageUrl: "/images/chatgpt.png",
 		Title: "ChatGPT",
 		RedirectUrl: "https://chatgpt.com/",
 	},
 	{
+		ImageUrl: "/images/hetzner.svg",
+		Title: "Hetzner Console",
+		RedirectUrl: "https://console.hetzner.com/",
+	},
+	{
 		ImageUrl: "/images/github-mark-white.png",
 		Title: "GitHub",
 		RedirectUrl: "https://github.com",
+	},
+	{
+		ImageUrl: "/images/discord.svg",
+		Title: "Discord",
+		RedirectUrl: "https://discord.com/channels/@me",
 	},
 	{
 		ImageUrl: "/images/json.png",
@@ -32,6 +37,11 @@ export const sites: SiteData[] = [
 		ImageUrl: "/images/youtube-music.png",
 		Title: "Youtube Music",
 		RedirectUrl: "https://music.youtube.com",
+	},
+	{
+		ImageUrl: "/images/primeVideo.png",
+		Title: "Prime Video",
+		RedirectUrl: "https://www.primevideo.com/",
 	},
 	{
 		ImageUrl: "/images/Amplify.png",
