@@ -31,7 +31,7 @@ export default function Home() {
 	}
 
 	function getBackgroundImage(): string {
-		if (isGhDeployment) return "bg-[url(/fire-home/images/makima2.jpg)]";
+		if (isGhDeployment) return "bg-[url(/fire-home/images/makima2.png)]";
 		return "bg-[url(/images/gotei-4k.jpg)]";
 	}
 
