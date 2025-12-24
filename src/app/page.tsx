@@ -96,7 +96,7 @@ export default function Home() {
 						{currentView == "tools" && <ToolsWrapper />}
 					</div>
 
-					<div className="hidden md:block w-[25%]"></div>
+					<div className="hidden md:block w-1/3"></div>
 
 					<div id="right-content-div" className="flex max-w-screen-2xl flex-wrap justify-center">
 						{currentView == "shortcuts" &&
