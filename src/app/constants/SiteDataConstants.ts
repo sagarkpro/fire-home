@@ -17,6 +17,11 @@ export const sites: SiteData[] = [
 		RedirectUrl: "https://github.com",
 	},
 	{
+		ImageUrl: "/images/gitlab-logo-500.png",
+		Title: "Gitlab",
+		RedirectUrl: "https://gitlab.com/",
+	},
+	{
 		ImageUrl: "/images/discord.svg",
 		Title: "Discord",
 		RedirectUrl: "https://discord.com/channels/@me",
