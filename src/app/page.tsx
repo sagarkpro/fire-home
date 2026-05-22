@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import SiteComponent from "./components/SiteComponent";
 import Firefox from "./components/Firefox";
-import { repoBasePath } from "./constants/Constants";
 import { ViewType } from "./models/ViewType";
 import ToolsWrapper from "./components/ToolsWrapper";
 import Image from "next/image";
@@ -16,8 +15,6 @@ export default function Home() {
 	const [currentView, setCurrentView] = useState<ViewType>("shortcuts");
 	const [isAnime, setIsAnime] = useState<boolean>(false);
 	const [translateX, setTranslateX] = useState<string>("0px");
-	const isGhDeployment: boolean = process.env.NODE_ENV === "production";
-	const basePath: string = repoBasePath;
 	const buttonImage = getSliderImage();
 	const backgroundImage = getBackgroundImage();
 
@@ -28,12 +25,10 @@ export default function Home() {
 	}
 
 	function getSliderImage(): string {
-		if (isGhDeployment) return "bg-[url(/fire-home/images/ichigo.jpg)]";
 		return "bg-[url(/images/ichigo.jpg)]";
 	}
 
 	function getBackgroundImage(): string {
-		if (isGhDeployment) return "bg-[url(/fire-home/images/makima2.png)]";
 		return "bg-[url(/images/makima2.png)]";
 	}
 
@@ -67,10 +62,10 @@ export default function Home() {
 						<div className="flex items-center">
 							<div className="flex gap-x-0.5 rounded-3xl overflow-clip">
 								<button onClick={() => changeCurrentView("tools")} className={`w-10 bg-indigo-200 p-2 border-black ${currentView == "tools" ? "opacity-100" : "opacity-70"}`}>
-									<Image width={32} height={32} src={(isGhDeployment ? basePath : "") + "/images/tools.svg"} alt="Tools" />
+									<Image width={32} height={32} src={"/images/tools.svg"} alt="Tools" />
 								</button>
 								<button onClick={() => changeCurrentView("shortcuts")} className={`w-10 bg-indigo-200 p-2 ${currentView == "shortcuts" ? "opacity-100" : "opacity-70"}`}>
-									<Image width={32} height={32} src={(isGhDeployment ? basePath : "") + "/images/web.svg"} alt="Web" />
+									<Image width={32} height={32} src={"/images/web.svg"} alt="Web" />
 								</button>
 							</div>
 						</div>
@@ -115,4 +110,3 @@ export default function Home() {
 		</div>
 	);
 }
- 

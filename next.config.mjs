@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
-    images: {
-        unoptimized: true
-    },
-    basePath: "/fire-home",
+	images: {
+		unoptimized: false,
+	},
 };
 
 export default nextConfig;
